@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="742.0" prefWidth="1106.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AfficherEnseignantControllers">
+   <children>
+      <TableView fx:id="tableEnseignant" layoutX="78.0" layoutY="68.0" prefHeight="303.0" prefWidth="979.0">
+        <columns>
+          <TableColumn fx:id="coloneID" prefWidth="55.0" text="ID" />
+          <TableColumn fx:id="coloneNom" prefWidth="117.0" text="Nom" />
+            <TableColumn fx:id="colonePrenom" prefWidth="119.0" text="Prenom" />
+            <TableColumn fx:id="coloneCIN" prefWidth="82.0" text="CIN" />
+            <TableColumn fx:id="coloneSalaire" prefWidth="74.0" text="Salaire" />
+            <TableColumn fx:id="coloneAbsence" prefWidth="98.0" text="Absence" />
+            <TableColumn fx:id="coloneEvaluation" prefWidth="178.0" text="Evaluation" />
+            <TableColumn fx:id="coloneModifier" prefWidth="122.0" text="Modifier" />
+            <TableColumn fx:id="coloneSupprimer" prefWidth="133.0" text="Supprimer" />
+        </columns>
+      </TableView>
+      <Label layoutX="431.0" layoutY="21.0" text="Liste des enseignants">
+         <font>
+            <Font name="American Typewriter Bold" size="26.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnValider" layoutX="194.0" layoutY="657.0" mnemonicParsing="false" onMouseClicked="#modifierEvent" text="Valider" />
+      <TextField fx:id="txNom" layoutX="120.0" layoutY="509.0" promptText="Nom" />
+      <TextField fx:id="txCIN" layoutX="120.0" layoutY="546.0" promptText="CIN" />
+      <TextField fx:id="txAbsence" layoutX="120.0" layoutY="587.0" promptText="Absence" />
+      <TextField fx:id="txPrenom" layoutX="303.0" layoutY="509.0" promptText="Prenom" />
+      <TextField fx:id="txSalaire" layoutX="303.0" layoutY="546.0" promptText="Salaire" />
+      <TextField fx:id="txEvaluation" layoutX="303.0" layoutY="587.0" promptText="Evaluation" />
+      <ImageView fitHeight="200.0" fitWidth="313.0" layoutX="771.0" layoutY="472.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/pidevoussama/87358447_802142133596436_6297333718579150848_n.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lbModifier" layoutX="120.0" layoutY="462.0" text="Modifier l'enseignant :" />
+      <Button fx:id="btnAjouter" layoutX="724.0" layoutY="403.0" mnemonicParsing="false" onAction="#btnAjouter" text="Ajouter un enseignant" />
+      <Button fx:id="btnRetour" layoutX="947.0" layoutY="403.0" mnemonicParsing="false" onAction="#btnRetour" text="Retour" />
+      <Button fx:id="btnAnnuler" layoutX="303.0" layoutY="657.0" mnemonicParsing="false" onAction="#btnAnnuler" text="Annuler" />
+      <Button fx:id="pdf" layoutX="553.0" layoutY="403.0" mnemonicParsing="false" onAction="#exporterPDF" text="Exporter Pdf" />
+   </children>
+</AnchorPane>
