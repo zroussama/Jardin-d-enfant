@@ -48,11 +48,7 @@ import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 
-/**
- * FXML Controller class
- *
- * @author ghass
- */
+
 public class AfficherEnseignantControllers implements Initializable {
 
     @FXML
